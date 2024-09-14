@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
+body{
+  /* user-select: none; */
+}
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,4 +26,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

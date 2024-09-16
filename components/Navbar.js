@@ -30,11 +30,11 @@ function Navbar() {
             {links.map((navLink) => (
               <li
                 key={`${navLink.className}-link-${Math.floor(
-                  Math.random() * 100
+                  Math.random() * 100 * 392 * 77 * 7 +
+                    9 * Math.floor(Math.random())
                 )}`}
                 className={`${navLink.className} p-3`}
               >
-                {console.log("ok")}
                 <a href={navLink.link.href}>{navLink.name}</a>
               </li>
             ))}

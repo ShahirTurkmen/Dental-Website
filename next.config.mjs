@@ -2,8 +2,10 @@
 const nextConfig = {
 //   experimental: {
     // typedRoutes: true,
-//   },
+  //   },
+  
   compiler: {
+    
     styledComponents: true,
   },
 };

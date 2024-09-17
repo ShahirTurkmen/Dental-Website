@@ -1,21 +1,15 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import styled from "styled-components";
-// import { FaChevronDown } from "react-icons/fa";
 import links from "./data";
+
 const btnclassname = `bg-[#3267FF] px-4 py-3 text-center text-sm font-semibold inline-block text-white cursor-pointer  transition duration-200 ease-in-out rounded-md hover:bg-[#265BEC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3267FF] focus-visible:ring-offset-2 active:scale-95`;
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0 auto;
-`;
+
 function Navbar() {
   return (
     <>
       <br />
-      <Wrapper>
+      <div className="flex flex-row items-center my-0 mx-auto">
         <div className="my-0 mx-auto">
           <Image
             className="w-auto h-auto mr-3"
@@ -47,7 +41,7 @@ function Navbar() {
             Make an Appointment
           </button>
         </div>
-      </Wrapper>
+      </div>
     </>
   );
 }

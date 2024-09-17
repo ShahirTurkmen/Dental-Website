@@ -2,7 +2,6 @@
 import React from "react";
 import localFont from "next/font/local";
 import Image from "next/image";
-import styled from "styled-components";
 
 const Archivo = localFont({
   src: "../app/fonts/Archivo-Regular.ttf",
@@ -10,18 +9,13 @@ const Archivo = localFont({
   weight: "400",
 });
 
-const Wrapper = styled.div`
-  margin-right: 1rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-`;
+
 
 function Header() {
   return (
     <>
-      <Wrapper
-        className={`text-[#636468] ${Archivo.className} border-b-[1px] border-b-[#E9E9E9] bg-[#FFF] p-3`}
+      <div
+        className={`flex flex-row mt-[1rem] mr-[1rem] text-[#636468] ${Archivo.className} border-b-[1px] border-b-[#E9E9E9] bg-[#FFF] p-3`}
       >
         <div className="my-0 mx-auto">
           <div className="flex flex-row">
@@ -51,7 +45,7 @@ function Header() {
             <p>Monday - Saturday: 9 am - 11.30 pm</p>
           </div>
         </div>
-      </Wrapper>
+      </div>
     </>
   );
 }

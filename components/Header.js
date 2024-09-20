@@ -1,15 +1,7 @@
 "use client";
 import React from "react";
-import localFont from "next/font/local";
 import Image from "next/image";
-
-const Archivo = localFont({
-  src: "../app/fonts/Archivo-Regular.ttf",
-  variable: "--font-Archivo",
-  weight: "400",
-});
-
-
+import { Archivo } from "./Fonts"; 
 
 function Header() {
   return (

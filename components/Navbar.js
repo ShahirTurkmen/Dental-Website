@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import links from "./data";
+import { Navlinks } from "./data";
 import { ManropeBold } from "./Fonts";
 import "animate.css";
 
@@ -25,7 +25,7 @@ function Navbar() {
         </div>
         <div>
           <ul className="list-none flex flex-row">
-            {links.map((navLink) => (
+            {Navlinks.map((navLink) => (
               <li
                 key={`${navLink.className}-link-${Math.floor(
                   Math.random() * 100 * 392 * 77 * 7 +

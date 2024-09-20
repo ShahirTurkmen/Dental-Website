@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.12.6",
+    "@ffmpeg/core-st": "^0.11.1",
+    "@ffmpeg/ffmpeg": "^0.12.10",
     "animate.css": "^4.1.1",
     "animejs": "^3.2.2",
+    "bootstrap": "^5.3.3",
     "bulma": "^1.0.2",
     "ls": "^0.2.1",
     "next": "14.2.11",
     "react": "^18",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
     "react-icons": "^5.3.0",
     "styled-components": "^6.1.13",
-    "uikit": "^3.21.12"
+    "uikit": "^3.21.12",
+    "wasm-brotli": "^2.0.2",
+    "wasm-gzip": "^2.1.0",
+    "wasm-zip": "^0.1.2"
   },
   "devDependencies": {
     "daisyui": "^4.12.10",

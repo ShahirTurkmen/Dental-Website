@@ -1,13 +1,7 @@
 "use client";
-import localFont from "next/font/local";
 import Image from "next/image";
 import React from "react";
-
-const Manrope = localFont({
-  src: "../app/fonts/Manrope-Regular.ttf",
-  variable: "--font-Manrope",
-  weight: "400",
-});
+import { Manrope } from "./Fonts";
 
 function Hero() {
   return (
@@ -34,8 +28,15 @@ function Hero() {
             Bring Back Your
             <br />
           </span>
-          <span className="text-[#000A2D] text-[65px] font-[700] break-words">
+          <span className="flex flex-row text-[#000A2D] text-[65px] font-[700] break-words absolute">
             Happy Smile
+            <Image
+              className="flex flex-shrink-0 top-0 bottom-120 left-2 right-0 rotate-[11deg] relative"
+              src="/images/draw-line.png"
+              width={120}
+              height={10}
+              alt="image"
+            />
           </span>
         </div>
       </div>

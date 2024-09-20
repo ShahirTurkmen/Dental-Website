@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import links from "./data";
+import { ManropeBold } from "./Fonts";
+import "animate.css";
 
 const btnclassname = `bg-[#3267FF] px-4 py-3 text-center text-sm font-semibold inline-block text-white cursor-pointer  transition duration-200 ease-in-out rounded-md hover:bg-[#265BEC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3267FF] focus-visible:ring-offset-2 active:scale-95`;
 
@@ -9,7 +11,9 @@ function Navbar() {
   return (
     <>
       <br />
-      <div className="flex flex-row items-center my-0 mx-auto">
+      <div
+        className={`${ManropeBold.className} flex flex-row items-center my-0 mx-auto font-bold`}
+      >
         <div className="my-0 mx-auto">
           <Image
             className="w-auto h-auto mr-3"
@@ -27,6 +31,9 @@ function Navbar() {
                   Math.random() * 100 * 392 * 77 * 7 +
                     9 * Math.floor(Math.random())
                 )}`}
+                onClick={(e) => {
+                  e.target.classList.add("animate")
+                }}
                 className={`${navLink.className} p-3`}
               >
                 <a href={navLink.link.href}>{navLink.name}</a>

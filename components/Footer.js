@@ -2,11 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { Archivo } from "./Fonts";
 import { FaTwitter } from "react-icons/fa";
+import { FooterLinks } from "./data";
+import Underline from "./Underline";
+import ReactBootstrap from "react-bootstrap"
 function Footer() {
   return (
     <div
       className={`${Archivo.className} bg-[#000A2D] text-[#FFFFFF]`}
-      style={{ padding: "60px 34px 15px 200px" }}
+      style={{ padding: "60px 34px 15px 90px" }}
     >
       <div className="flex flex-row p-3 justify-between">
         <div
@@ -33,11 +36,72 @@ function Footer() {
             <p className="text-[18px]">וֹ</p>
           </div>
         </div>
-        <div className="mt-7">
-          <h1 style={{borderBottom: '2px solid #3267FF'}}>Helpfull Link</h1>
+        <div className="mt-5">
+          <h1 className="text-[18px]">Helpfull Link</h1>
+          <Underline
+            borderColor="#3267FF"
+            borderShape="borderTop"
+            borderSize="2px"
+            borderTheme="solid"
+            height="2px"
+            width="70px"
+            marginTop="12px"
+          />
+
+          <ul className="mt-6">
+            {FooterLinks.map((link, index) => {
+              index =
+                index +
+                Math.floor(Math.random() * Math.floor(Math.random() * 671));
+              return (
+                <li className="mt-2" key={index}>
+                  <a href={link.href} className="mt-4">
+                    {link.name}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <div className="mt-7">di</div>
-        <div className="mt-7">s</div>
+        <div className="mt-5">
+          <h1 className="text-[18px]">Support</h1>
+          <Underline
+            borderColor="#3267FF"
+            borderShape="borderTop"
+            borderSize="2px"
+            borderTheme="solid"
+            height="2px"
+            width="57px"
+            marginTop="12px"
+          />
+          <ul className="mt-6">
+            {FooterLinks.map((link, index) => {
+              index =
+                index +
+                Math.floor(Math.random() * Math.floor(Math.random() * 671));
+              return (
+                <li className="mt-2" key={index}>
+                  <a href={link.href} className="mt-4">
+                    {link.name}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="mt-5">
+          <h1 className="text-[18px]">Contact Us</h1>
+          <Underline
+            borderColor="#3267FF"
+            borderShape="borderTop"
+            borderSize="2px"
+            borderTheme="solid"
+            height="2px"
+            width="70px"
+            marginTop="12px"
+          />
+          
+        </div>
       </div>
       <br />
       <div
@@ -51,4 +115,41 @@ function Footer() {
   );
 }
 
+/* 
+!!!css
+form {
+  display:flex;
+  flex-direction:row;
+  
+  border:1px solid grey;
+
+  padding:1px;
+}
+
+input {
+  flex-grow:2;
+  border:none;
+}
+
+input:focus {
+  outline: none;
+}
+
+form:focus-within { 
+  outline: 1px solid blue 
+}
+
+button {
+  border:1px solid blue;
+  background:blue;
+  color:white;
+} 
+
+
+!!!html
+<form>
+  <input />
+  <button>Go</button>
+</form>
+*/
 export default Footer;

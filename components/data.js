@@ -1,5 +1,5 @@
 import Image from "next/image";
-const links = [
+const Navlinks = [
   {
     name: "Home",
     link: {
@@ -54,4 +54,10 @@ const links = [
   },
 ];
 
-export default links
+const FooterLinks = [
+  { name: "Privacy Policy", href: "#" },
+  { name: "Support", href: "#" },
+  { name: "FAQ", href: "#" },
+  { name: "Terms & Conditions", href: "#" },
+];
+export { Navlinks, FooterLinks };

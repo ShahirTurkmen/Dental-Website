@@ -37,5 +37,7 @@ next-env.d.ts
 
 
 # unused
+/public/unused
+/public/unused/*
 unused
 unused/*

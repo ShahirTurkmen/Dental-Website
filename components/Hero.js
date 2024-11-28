@@ -10,7 +10,7 @@ function Hero() {
       <div className="flex flex-col items-start my-[122px]">
         <p
           className={`${Manrope.className} flex flex-row rounded border border-[#EEE] p-2 text-[#3267FF] break-words`}
-          style={{ padding: "6px 15.81px 7.39px 16.97px" }}
+          // style={{ padding: "6px 15.81px 7.39px 16.97px" }}
         >
           <Image
             className="w-auto h-auto mr-1"

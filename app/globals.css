@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  /* user-select: none; */
+.animation {
+  transition: transform /*cubic-bezier(0.46, 0.38, 0.46, 0.38)*/ linear
+   999.1ms;
+  transform: perspective(10px) translate3d(10px, 10px, 10px)
 }
+/* body{ */
+  /* user-select: none; */
+/* } */
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

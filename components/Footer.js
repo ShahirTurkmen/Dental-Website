@@ -4,7 +4,7 @@ import { Archivo } from "./Fonts";
 import { FaTwitter } from "react-icons/fa";
 import { FooterLinks } from "./data";
 import Underline from "./Underline";
-import ReactBootstrap from "react-bootstrap"
+import { Button, TextInput } from "flowbite-react";
 function Footer() {
   return (
     <div
@@ -17,7 +17,6 @@ function Footer() {
           style={{ padding: "10px 10px 10.01px 10px" }}
         >
           <Image
-            className=""
             src="/images/Dental-White.svg"
             width={268}
             height={60}
@@ -100,7 +99,32 @@ function Footer() {
             width="70px"
             marginTop="12px"
           />
-          
+          <div>
+            <input
+              type="text"
+              className="flex-grow-[2] border-none focus:outline-none text-black"
+              required
+              placeholder="Your Email Address..."
+            />
+              <button className="text-center text-white text-base font-bold font-[Archivo] leading-none">
+                Sign Ups
+              </button>
+          </div>
+          <div className="mt-4">
+            <p className="mb-[9px] flex flex-row">
+              <Image
+                className="mr-4"
+                src="/images/Frame2.svg"
+                width={16}
+                height={16}
+                alt="image"
+              />
+              Jl. Patimura II No. 18, Denpasar
+            </p>
+            <p>
+              <span className="mr-3">略</span> +01234 567 890
+            </p>
+          </div>
         </div>
       </div>
       <br />
@@ -115,41 +139,4 @@ function Footer() {
   );
 }
 
-/* 
-!!!css
-form {
-  display:flex;
-  flex-direction:row;
-  
-  border:1px solid grey;
-
-  padding:1px;
-}
-
-input {
-  flex-grow:2;
-  border:none;
-}
-
-input:focus {
-  outline: none;
-}
-
-form:focus-within { 
-  outline: 1px solid blue 
-}
-
-button {
-  border:1px solid blue;
-  background:blue;
-  color:white;
-} 
-
-
-!!!html
-<form>
-  <input />
-  <button>Go</button>
-</form>
-*/
 export default Footer;

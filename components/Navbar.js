@@ -3,8 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { Navlinks } from "./data";
 import { ManropeBold } from "./Fonts";
-import "animate.css";
-
 const btnclassname = `bg-[#3267FF] px-4 py-3 text-center text-sm font-semibold inline-block text-white cursor-pointer  transition duration-200 ease-in-out rounded-md hover:bg-[#265BEC] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3267FF] focus-visible:ring-offset-2 active:scale-95`;
 
 function Navbar() {
